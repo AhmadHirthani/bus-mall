@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            width: 75%;
+            height: 100px;
+            background-color: #adeffd;
+            margin: auto;
+            border-radius: 20px;
+            padding-left: 100px;
+
+        }
+
+        nav {
+            display: inline-flex;
+        }
+
+
+        #space {
+            width: 77%;
+            background-color: rgb(255, 255, 255);
+            height: 10px;
+            margin: auto;
+
+        }
+
+        #textSection {
+            width: 80%;
+            background-color: rgb(27, 111, 136);
+            height: 110px;
+            margin: auto;
+            border-radius: 20px;
+            padding: 20px;
+            
+        }
+
+        p {
+            font-size: 150%;
+            color: white;
+        }
+
+        #imagesSection {
+            width: 55%;
+            background-color: rgb(22, 64, 77);
+            height: 215px;
+            margin: auto;
+            border-radius: 20px;
+            padding: 5px 180px 5px 180px;
+            
+          
+        }
+
+
+        #resultsSection {
+            width: 79%;
+            background-color: rgb(38, 0, 255);
+            height: 600px;
+            margin: auto;
+            border-radius: 20px;
+            padding: 25px;
+            font-size: 150%;
+            font-style: italic;
+        }
+
+        img {
+            width: 180px;
+            height: 180px;
+            margin: 20px;
+            border-radius: 10px;
+
+
+        }
+
+        #logoImage {
+            width: 180px;
+            height: auto;
+        }
+
+        h1 {
+            font-family: 'Piedra', cursive;
+            color: red;
+            font-size: 200%;
+            margin: 35px 20px 5px 35px;
+
+
+        }
+
+        h2 {
+            margin: 40px 20px 5px 35px;
+        }
+
+        body {
+            margin: auto;
+        }
+
+        footer {
+            width: 83%;
+            background-color: rgb(53, 123, 145);
+            height: 30px;
+            padding-top: 10px;
+            font-size: 100%;
+            font-style: italic;
+            position: fixed;
+            bottom: 0px;
+            left: 108px;
+          
+        }
+        footer p{
+            width: inherit;
+            text-align: center;
+            margin: 0px;
+        }
+
+        #startVotingButton {
+            width: 83%;
+            height: 50px;
+            font-style: italic;
+            position: sticky;
+            top: 225px;
+            left: 108px;
+
+            background-color: rgb(51, 255, 0);
+            font-size: 20px;
+            font-weight: 600;
+            color: rgb(241, 22, 113);
+            border-radius: 10px;
+            border-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img id="logoImage" src="img/busMall.jpg" alt="bus mall picture">
+            <h1>B u s M a l l c a t a l o g</h1>
+            <h2>About Us</h2>
+
+        </nav>
+
+    </header>
+    <div id="space"></div>
+    <section id="textSection">
+        <p>The app’s purpose is to have the group members choose which product, of the three displayed images, that they
+            would be most likely to purchase, and then store, calculate, and visually display the resulting data. Please
+            click on the most attractive product for you</p>
+    </section>
+    <div id="space"></div>
+    <button id="startVotingButton">Start Voting</button>
+    <div id="space"></div>
+
+
+
+
+    <section id="imagesSection">
+        <img id="firstImage" src="img/chair.jpg" alt="">
+        <img id="secondImage" src="img/shark.jpg" alt="">
+        <img id="thirdImage" src="img/water-can.jpg" alt="">
+    </section>
+    <div id="space"></div>
+
+    <section id="resultsSection">
+        <ul id="results"></ul>
+
+
+    </section>
+    <div id="space"></div>
+
+    <footer>
+        <p>&COPY; Ahmad Alhrthani 2020</p>
+    </footer>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
