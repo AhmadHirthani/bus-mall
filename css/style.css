@@ -112,8 +112,8 @@ footer p{
     width: 83%;
     height: 50px;
     font-style: italic;
-    position: sticky;
-    top: 225px;
+    position: relative;
+    top: 0px;
     left: 108px;
 
     background-color: rgb(51, 255, 0);
