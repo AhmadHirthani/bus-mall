@@ -9,9 +9,10 @@ function startVotingFn() {
     var chartTiltesArray = ['Bag', 'Banana', 'Bathroom', 'Boots', 'Breakfast', 'Bubblegum', 'Chair', 'Cthulhu', 'Dog-duck', 'Dragon',
         'Pen', 'Pet-sweep', 'Scissors', 'Shark', 'Sweep', 'Tauntaun', 'Unicorn', 'Usb', 'Water-can', 'Wine-glass'];
     console.log('localStorage in the start:', localStorage)
-
+    //allProductsArray
     var allProductsArray;
 
+    //get data from local storage
     allProductsArray = JSON.parse(localStorage.getItem('allProductsArray'));
     if (allProductsArray == null) {
         allProductsArray = [];
@@ -104,7 +105,7 @@ function startVotingFn() {
             imagesSection.removeEventListener('click', clickButtonFn);
         }
     };
-
+    //remove results function
     function removeResults() {
         //results.textContent="";
         var xx = document.getElementById('results');
@@ -114,7 +115,7 @@ function startVotingFn() {
             }
         }
     }
-
+    //dispaly random image function
     function displayRandomImage() {
         var prevFirstImageIndex;
         var prevSecondImageIndex;
@@ -157,8 +158,9 @@ function startVotingFn() {
         allProductsArray[secondImageIndex].timesShown += 1;
         allProductsArray[thirdImageIndex].timesShown += 1;
     };
-    function displayChart(allProductsArray) {
 
+    //function to display chart
+    function displayChart(allProductsArray) {
         for (var i = 0; i < allProductsArray.length; i++) {
             numberOfClicksArray[i] = allProductsArray[i].numberOfClicks;
             numberOfShownArray[i] = allProductsArray[i].timesShown;
